@@ -1,3 +1,5 @@
+docker-compose up -d --build
+
 after docker-compose build 
      run -- 
           docker exec -it sonapandavoting_db_1  mysql -u root -p
