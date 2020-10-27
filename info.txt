@@ -1,0 +1,12 @@
+after docker-compose build 
+     run -- 
+          docker exec -it sonapandavoting_db_1  mysql -u root -p
+          the enter password == example
+      follow --
+         use djangoProject;
+         select * from votingdcdetails;
+         insert into votingdcdetails (name,votes) values('Sona',0);
+         insert into votingdcdetails (name,votes) values('Panda,0);
+         select * from votingdcdetails;
+         exit;
+
